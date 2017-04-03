@@ -1,8 +1,7 @@
 USPS Shipping Label Wizard
 =========
 
-A simple webapp prototype that prints a USPS shipping label given user inputs Edit
-Add topics. Currently still under development. Use EasyPost API https://github.com/EasyPost. 
+A simple webapp prototype that prints a USPS shipping label given user inputs. Currently still under development. Use EasyPost API https://github.com/EasyPost. 
 
 
 Getting Started
