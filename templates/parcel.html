@@ -1,0 +1,120 @@
+<!-- parcel page: collects detailed information about the package, filled after address page-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>USPS Shipping Label Wizard</title>
+
+        <link rel="stylesheet" href="../static/css/lib/bootstrap.css">
+        <link rel="stylesheet" href="../static/css/lib/bootstrap-responsive.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <h2>USPS Shipping Label Wizard</h2>
+                    <ul class="nav">
+                        <li><a href="index.html">Address Info</a></li>
+                        <li class="active"><a href="parcel.html">Parcel Details</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <table class="table table-hover table-striped">
+                <form action="." method="POST">
+                    <thead>
+                        <th>Parcel Size</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">length</span></td>
+                            <td><input type="text" placeholder="e.g. 5 cm or 18in" name="length" id="length"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">width</span></td>
+                            <td><input type="text" placeholder="e.g. 5 cm or 18in" name="width" id="width"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">height</span></td>
+                            <td><input type="text" placeholder="e.g. 5 cm or 18in" name="height" id="height"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">weight</span></td>
+                            <td><input type="text" placeholder="e.g. 5kg or 20lb" name="weight" id="weight"></td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+
+            <table class="table table-hover table-striped">
+                <form action="." method="POST">
+                    <thead>
+                        <th>Customs Info</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">description</span></td>
+                            <td><input type="text" placeholder="e.g. Stessa t-shirt or gift" name="description" id="description"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">quantity</span></td>
+                            <td><input type="text" name="quantity" id="quantity"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">value</span></td>
+                            <td><input type="text" placeholder="in USD" name="value" id="value"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">weight</span></td>
+                            <td><input type="text" placeholder="in USD" name="cusweight" id="cusweight"></td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+
+            <table class="table table-hover table-striped">
+                <form action="." method="POST">
+                    <thead>
+                        <th>Additional Info</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="item">handling instructions option</span></td>
+                            <td><input type="text" placeholder="e.g. do not drop!" name="handling" id="handling"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="item">insurance amount</span></td>
+                            <td><input type="text" placeholder="e.g. in USD" name="insurance" id="insurance"></td>
+                        </tr>
+                    </tbody>
+                </form>
+            </table>
+
+            <table class="table table-hover table-striped">
+                <form action="." method="POST">
+                    <thead>
+                        <th>Signature</th>
+                        <th>Date</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="signature" id="signature"></td>
+                            <td><input type="text" name="date" id="date"></td>
+                        </tr>
+                        <tr>Almost done! confirm your information above by signing here</tr>
+                    </tbody>
+                </form>
+            </table>
+            
+            <div class="control-group">
+                <button type="submit" class="btn"><a href="index.html">Print Label!</a></button>
+            </div>
+         </div>
+
+        <script src="../static/js/lib/jquery.js"></script>
+        <script src="../static/js/lib/bootstrap.js"></script>
+    </body>
+</html>

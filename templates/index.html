@@ -1,0 +1,109 @@
+<!-- Address page: collects from and to addresses, first page users land on -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>USPS Shipping Label Wizard</title>
+
+        <link rel="stylesheet" href="../static/css/lib/bootstrap.css">
+        <link rel="stylesheet" href="../static/css/lib/bootstrap-responsive.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <h2>USPS Shipping Label Wizard</h2>
+                    <ul class="nav">
+                        <li class="active"><a href="#">Address Info</a></li>
+                        <li><a href="parcel.html">Parcel Details</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="submit-form">
+                <form action="." method="POST">
+                    <fieldset>
+                        <legend>Enter addresses here:</legend>
+                        <table class="table table-hover table-striped" action="." method="POST">
+                            <thead>
+                                <th>Destination Address</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="item">street1</span></td>
+                                    <form action="." method="POST">
+                                        <td><input type="text" name="to_street1" id="to_street1"></td>
+                                    </form>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">street2</span></td>
+                                    <td><input type="text"name="to_street2" id="to_street2" placeholder="e.g. Apt 101"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">city</span></td>
+                                    <td><input type="text" name="to_city" id="to_city" placeholder="e.g. San Francisco"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">state</span></td>
+                                    <td><input type="text" name="to_state" id="to_state"placeholder="e.g. CA"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">zip</span></td>
+                                    <td><input type="text" name="to_zip" id="to_zip"placeholder="e.g. 12345"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">country</span></td>
+                                    <td><input type="text" name="to_country" id="to_country" placeholder="e.g. U.S."></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <label>To</label>
+                        <input type="text" name="to" id="to" placeholder="e.g. apt, street, city, state, zipcode"> -->
+
+                        <table class="table table-hover table-striped" action="." method="POST">
+                            <thead>
+                                <th>From Address</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="item">street1</span></td>
+                                    <td><input type="text" name="from_street1" id="from_street1"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">street2</span></td>
+                                    <td><input type="text"name="from_street2" id="from_street2" placeholder="e.g. Apt 101"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">city</span></td>
+                                    <td><input type="text" name="from_city" id="from_city" placeholder="e.g. San Francisco"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">state</span></td>
+                                    <td><input type="text" name="from_state" id="from_state"placeholder="e.g. CA"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">zip</span></td>
+                                    <td><input type="text" name="from_zip" id="from_zip"placeholder="e.g. 12345"></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="item">country</span></td>
+                                    <td><input type="text" name="from_country" id="from_country" placeholder="e.g. U.S."></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="control-group">
+                            <button type="submit" class="btn"><a href="parcel.html">Next</a></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <script src="../static/js/lib/jquery.js"></script>
+        <script src="../static/js/lib/bootstrap.js"></script>
+    </body>
+</html>

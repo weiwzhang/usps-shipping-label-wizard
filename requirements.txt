@@ -1,0 +1,8 @@
+# for backend
+Flask
+Flask-Script
+easyport
+
+# for testing
+selenium
+pytest
